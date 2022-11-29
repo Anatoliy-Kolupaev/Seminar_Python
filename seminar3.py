@@ -33,6 +33,8 @@ else:
 
 # Вариант 1
 l = ["йцу", "фыв", "ячс", "цук", "йцукен", "цук"]
+
+
 def serch(l, a):
     count = 0
     for i in range(len(l)):
@@ -49,10 +51,8 @@ serch(l, 'цук')
 # Вариант 2
 mass = ["123", "234", "123", "567"]
 a = "123"
-
 try:
     mass.remove(a)
     print((mass.index(a))+1)
 except ValueError:
     print(-1)
-
