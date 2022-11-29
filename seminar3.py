@@ -56,3 +56,16 @@ try:
     print((mass.index(a))+1)
 except ValueError:
     print(-1)
+
+# Интересный ввод!
+
+# def input_correct_int():
+#     while True:
+#         try:
+#             return int(input())
+#             break
+#         except:
+#             print('Некорректный ввод')
+
+# a = input_correct_int()
+# print(a)
