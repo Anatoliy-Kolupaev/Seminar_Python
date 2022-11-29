@@ -4,8 +4,6 @@
 # ['114411', 'sjngsjgng', '123fsghs'] -> No
 # ['12', 12] -> Yes
 
-# n = int(input('кол-во элементов: '))
-# l = [input() for i in range(n)]
 l = [123, 'fsfsfs', 'fsf', 'qeq', 3243]
 a = "No"
 for j in l:
@@ -13,6 +11,16 @@ for j in l:
         a = 'Yes'
         break
 print(a)
+
+# Вариант 2
+
+mass = ['ssss', 'sngujn556', 44]
+types = [str(type(i)) for i in mass]
+if "<class 'int'>" in types or "<class 'float'>" in types:
+    print('Yes')
+else:
+    print('No')
+
 
 #   2. Напишите программу, которая определит позицию второго вхождения строки в списке либо сообщит, что её нет.
 
@@ -25,8 +33,6 @@ print(a)
 
 # Вариант 1
 l = ["йцу", "фыв", "ячс", "цук", "йцукен", "цук"]
-
-
 def serch(l, a):
     count = 0
     for i in range(len(l)):
@@ -40,3 +46,13 @@ def serch(l, a):
 
 
 serch(l, 'цук')
+# Вариант 2
+mass = ["123", "234", "123", "567"]
+a = "123"
+
+try:
+    mass.remove(a)
+    print((mass.index(a))+1)
+except ValueError:
+    print(-1)
+
